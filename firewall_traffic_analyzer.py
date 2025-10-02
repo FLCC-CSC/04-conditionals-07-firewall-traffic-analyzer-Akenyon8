@@ -35,7 +35,7 @@ elif port == 443:
     risk = "LOW RISK: Secure encrypted transfer detected."
 
 
-else:
+else port == 3398:
     risk = "UNKNOWN: Unrecognized traffic pattern."
 print(f"Risk Assessment: {risk}")
 print("------------------------")
