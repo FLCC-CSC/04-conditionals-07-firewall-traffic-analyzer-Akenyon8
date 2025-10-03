@@ -1,8 +1,8 @@
 # FILE NAME - firewall_traffic_analyzer.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Austin Kenyon
+# DATE: 10/02/2025
+# BRIEF DESCRIPTION:  Building Firewall analyzer using "and" and "or" operators.
 
 
 
@@ -15,13 +15,22 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
-
-
-
-
-
-
-
+print("=== Network Traffic Security Analyzer ===")
+port = int(input("Enter the port number (e.g., 80, 22, 443, 3389): "))
+size = int(input("Enter the data transfer size in megabytes (MB): "))
+print()
+print("FIREWALL LOG:")
+print(f"Port: {port}, Transfer Size: {size} MB")
+if port == 22 or size > 500:
+    risk = "HIGH RISK: Potential unauthorized remote access detected!"
+elif port == 80 or size > 100:
+    risk = "MEDIUMM RISK: Large unencrypted data transfer detected."
+elif port == 443:
+    risk = "LOW RISK: Secure encrypted transfer detected."
+else port == 3398:
+    risk = "UNKNOWN: Unrecognized traffic pattern."
+print(f"Risk Assessment: {risk}")
+print("------------------------")
 
 
 ########### END YER CODE ABOVE THIS LINE ###########
@@ -90,7 +99,7 @@ Risk Assessment: UNKNOWN: Unrecognized traffic pattern.
 
 1. Did you get tripped up using the `or` or `and` operators? If so, how?
 
-
+No, it was fairly straight forward.
 
 
 
