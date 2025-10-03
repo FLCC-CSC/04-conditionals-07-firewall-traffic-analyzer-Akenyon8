@@ -27,7 +27,7 @@ elif port == 80 or size > 100:
     risk = "MEDIUMM RISK: Large unencrypted data transfer detected."
 elif port == 443:
     risk = "LOW RISK: Secure encrypted transfer detected."
-else:
+elif port == 3398:
     risk = "UNKNOWN: Unrecognized traffic pattern."
 print(f"Risk Assessment: {risk}")
 print("------------------------")
